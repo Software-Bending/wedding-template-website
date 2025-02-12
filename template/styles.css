@@ -1,0 +1,42 @@
+/*SECCION PARA INCRUSTAR LA FUENTE PRINICIPAL Y SECUNDARIA*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*FIN DE SECCION*/
+
+:root {
+    --color-primary: #212402;
+    --color-secondary: #38502E;
+    --color-accent: #828945;
+    --color-background: #E9DED2;
+    --color-contrast: #FFFFFF;
+    --font-primary: 'Montserrat', serif;
+    --font-secondary: 'Dancing Script', serif;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+}
+
+h1, h2, h3 {
+    color: var(--color-secondary);
+}
+
+h1 {
+    font-size: 3em;
+    font-family: var(--font-secondary);
+    font-weight: bold;
+}
+
+h2 {
+    font-family: var(--font-primary);
+}
+
+h3 {
+    font-family: var(--font-secondary);
+}
+
+button {
+    background: var(--color-accent);
+    color: white;
+}
