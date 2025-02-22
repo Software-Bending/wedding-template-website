@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A&Z Nuestra Boda</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h2>¡Nos Casamos!</h2>
-        <h1>Carlos & Astrid</h1>
-        <p>30 de febrero del 2025 - Culiacán, Sin.</p>
+      <h2>¡Nos Casamos!</h2>
+      <h1 class="font-secondary">Carlos & Astrid</h1>
     </header>
 
     <section id="countdown">
-        <h2>Cuenta Regresiva</h2>
-        <p id="timer">00 días 00:00:00</p>
+      <div class="countdown-date">
+        <h2 class="font-secondary text-color-contrast">Save the date</h2>
+        <h2 class="text-color-contrast">30 de febrero del 2025</h2>
+        <p class="text-color-contrast">Culiacán, Sin.</p>
+      </div>
+      <div class="countdown-details">
+        <div class="countdown-details-box">
+          <p id="days" class="countdown-details-box--value"></p>
+          <p class="countdown-details-box--item">Días</p>
+        </div>
+
+        <p class="countdown-details-divider">:</p>
+
+        <div class="countdown-details-box">
+          <p id="hours" class="countdown-details-box--value"></p>
+          <p class="countdown-details-box--item">Horas</p>
+        </div>
+
+        <p class="countdown-details-divider">:</p>
+
+        <div class="countdown-details-box">
+          <p id="minutes" class="countdown-details-box--value"></p>
+          <p class="countdown-details-box--item">Minutos</p>
+        </div>
+
+        <p class="countdown-details-divider">:</p>
+
+        <div class="countdown-details-box">
+          <p id="seconds" class="countdown-details-box--value"></p>
+          <p class="countdown-details-box--item">Segundos</p>
+        </div>
+      </div>
     </section>
 
     <section id="event-info">
-        <h2>Detalles del Evento</h2>
-        <div id="ceremony"></div>
-        <div id="reception"></div>
+      <h2>Detalles del Evento</h2>
+      <div id="ceremony"></div>
+      <div id="reception"></div>
     </section>
 
     <section id="rsvp">
-        <h2>Confirma tu Asistencia</h2>
-        <button id="confirm-btn">Confirmar</button>
+      <h2>Confirma tu Asistencia</h2>
+      <button id="confirm-btn">Confirmar</button>
     </section>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

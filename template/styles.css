@@ -3,40 +3,92 @@
 /*FIN DE SECCION*/
 
 :root {
-    --color-primary: #212402;
-    --color-secondary: #38502E;
-    --color-accent: #828945;
-    --color-background: #E9DED2;
-    --color-contrast: #FFFFFF;
-    --font-primary: 'Montserrat', serif;
-    --font-secondary: 'Dancing Script', serif;
+  --color-primary: #212402;
+  --color-secondary: #38502e;
+  --color-accent: #828945;
+  --color-background: #e9ded2;
+  --color-contrast: #ffffff;
+  --font-primary: 'Montserrat', serif;
+  --font-secondary: 'Dancing Script', serif;
 }
 
 body {
-    background-color: var(--color-background);
-    color: var(--color-primary);
-    font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  margin: 0;
 }
 
-h1, h2, h3 {
-    color: var(--color-secondary);
+h1,
+h2,
+h3 {
+  color: var(--color-secondary);
 }
 
 h1 {
-    font-size: 3em;
-    font-family: var(--font-secondary);
-    font-weight: bold;
+  font-size: 3em;
+  font-family: var(--font-secondary);
+  font-weight: bold;
 }
 
-h2 {
-    font-family: var(--font-primary);
+.font-primary {
+  font-family: var(--font-primary);
 }
 
-h3 {
-    font-family: var(--font-secondary);
+.font-secondary {
+  font-family: var(--font-secondary);
 }
 
 button {
-    background: var(--color-accent);
-    color: white;
+  background: var(--color-accent);
+  background-color: var(--color-contrast);
 }
+
+.text-color-contrast {
+    color: var(--color-contrast);
+}
+
+/*COUNTDTOWN COMPONENT*/
+.countdown-date {
+  background-color: var(--color-accent);
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 45px;
+}
+
+.countdown-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -50px;
+}
+
+.countdown-details-box {
+  text-align: center;
+  background-color: var(--color-contrast);
+  width: 18%;
+  max-width: 9em;
+  margin: 0 0.5em;
+  padding: 1em 0;
+}
+
+.countdown-details-box--value {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--color-secondary);
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.countdown-details-box--item {
+  color: gray;
+  font-weight: 400;
+}
+
+p.countdown-details-divider {
+  font-size: 1.7rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+/*END COUNTDTOWN COMPONENT*/
