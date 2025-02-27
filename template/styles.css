@@ -60,30 +60,34 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: -50px;
+  padding: 16px;
 }
 
 .countdown-details-box {
   text-align: center;
   background-color: var(--color-contrast);
-  width: 18%;
-  max-width: 9em;
-  margin: 0 0.5em;
-  padding: 1em 0;
+  width: 100px;
+  max-width: 22%;
+  margin: 0px 4px;
+  padding: 0px;
 }
 
 .countdown-details-box--value {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 24px;
   color: var(--color-secondary);
   margin-bottom: 0;
-  margin-top: 1rem;
+  margin-top: 12px;
 }
 
 .countdown-details-box--item {
   color: gray;
   font-weight: 400;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-size: 12px;
 }
 
 p.countdown-details-divider {
