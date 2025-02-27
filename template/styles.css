@@ -45,7 +45,35 @@ button {
 }
 
 .text-color-contrast {
-    color: var(--color-contrast);
+  color: var(--color-contrast);
+}
+
+.m-sm {
+  margin: 4px;
+}
+
+.mx-sm {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.my-sm {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.m-md {
+  margin: 8px;
+}
+
+.mx-md {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.my-md {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 /*COUNTDTOWN COMPONENT*/
