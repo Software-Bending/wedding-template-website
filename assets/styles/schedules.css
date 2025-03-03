@@ -1,0 +1,53 @@
+/* Estilos generales para móviles (Mobile-First) */
+.schedules__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
+  text-align: center;
+}
+
+.schedules__details__religious-ceremony,
+.schedules__details__reception {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: flex-start;
+}
+
+.schedules__details__reception {
+  flex-direction: row-reverse;
+}
+
+.schedules__details__reception__image,
+.schedules__details__religious-ceremony__image {
+  border-radius: 16px;
+}
+
+.schedules__details__reception__image {
+  margin-right: 32px;
+}
+
+.schedules__details__religious-ceremony__place,
+.schedules__details__reception__place {
+  font-weight: 400;
+}
+
+/* Tablets y superiores */
+@media (min-width: 1024px) {
+  .schedules__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .schedules__details__reception {
+    flex-direction: row;
+  }
+
+  .schedules__details__reception__image {
+    margin-right: 0;
+  }
+}

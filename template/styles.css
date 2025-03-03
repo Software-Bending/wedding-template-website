@@ -1,7 +1,8 @@
 /*SECCION PARA INCRUSTAR LA FUENTE PRINICIPAL Y SECUNDARIA*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import '../components/countdown.css';
-@import '../components/nupcial.css';
+@import '../assets/styles/countdown.css';
+@import '../assets/styles/nupcial.css';
+@import '../assets/styles/schedules.css';
 /*FIN DE SECCION*/
 
 :root {
@@ -12,6 +13,13 @@
   --color-contrast: #ffffff;
   --font-primary: 'Montserrat', serif;
   --font-secondary: 'Dancing Script', serif;
+
+  --breakpoint-xs: 480px;  /* Teléfonos pequeños */
+  --breakpoint-sm: 640px;  /* Teléfonos grandes */
+  --breakpoint-md: 768px;  /* Tablets */
+  --breakpoint-lg: 1024px; /* Laptops */
+  --breakpoint-xl: 1280px; /* Monitores grandes */
+  --breakpoint-2xl: 1536px; /* Pantallas extra grandes */
 }
 
 body {
@@ -30,6 +38,12 @@ h3 {
 h1 {
   font-size: 3em;
   font-family: var(--font-secondary);
+  font-weight: bold;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
   font-weight: bold;
 }
 
@@ -80,6 +94,54 @@ button {
 .my-md {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.p-sm {
+  padding: 4px;
+}
+
+.px-sm {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.py-sm {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.p-md {
+  padding: 8px;
+}
+
+.px-md {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.py-md {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.px-l {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.py-l {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.px-xl {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.py-xl {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .box-shadow-1 {
