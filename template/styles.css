@@ -6,6 +6,7 @@
 @import '../assets/styles/no-kids.css';
 @import '../assets/styles/gallery.css';
 @import '../assets/styles/confirmation.css';
+@import '../assets/styles/banner.css';
 /*FIN DE SECCION*/
 
 :root {
@@ -17,9 +18,9 @@
   --font-primary: 'Montserrat', serif;
   --font-secondary: 'Dancing Script', serif;
 
-  --breakpoint-xs: 480px;  /* Teléfonos pequeños */
-  --breakpoint-sm: 640px;  /* Teléfonos grandes */
-  --breakpoint-md: 768px;  /* Tablets */
+  --breakpoint-xs: 480px; /* Teléfonos pequeños */
+  --breakpoint-sm: 640px; /* Teléfonos grandes */
+  --breakpoint-md: 768px; /* Tablets */
   --breakpoint-lg: 1024px; /* Laptops */
   --breakpoint-xl: 1280px; /* Monitores grandes */
   --breakpoint-2xl: 1536px; /* Pantallas extra grandes */
