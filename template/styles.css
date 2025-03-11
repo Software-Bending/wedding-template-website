@@ -7,6 +7,8 @@
 @import '../assets/styles/gallery.css';
 @import '../assets/styles/confirmation.css';
 @import '../assets/styles/banner.css';
+@import '../assets/styles/dress-code.css';
+@import '../assets/styles/mesa-regalos.css';
 /*FIN DE SECCION*/
 
 :root {
@@ -66,6 +68,10 @@ button {
 
 .text-color-primary {
   color: var(--color-primary);
+}
+
+.text-color-secondary {
+  color: var(--color-secondary);
 }
 
 .text-color-accent {
@@ -160,4 +166,8 @@ button {
 
 .text-center {
   text-align: center;
+}
+
+.bold-500 {
+  font-weight: 500;
 }
