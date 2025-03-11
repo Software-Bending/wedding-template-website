@@ -13,6 +13,7 @@
   flex-direction: row;
   gap: 25px;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .schedules__details__reception {
@@ -21,11 +22,20 @@
 
 .schedules__details__reception__image,
 .schedules__details__religious-ceremony__image {
+  height: 150px;
   border-radius: 16px;
 }
 
 .schedules__details__reception__image {
-  margin-right: 32px;
+  margin-right: 0;
+}
+
+.schedules__details__religious-ceremony__info,
+.schedules__details__reception__info {
+  >* {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
 }
 
 .schedules__details__religious-ceremony__place,
@@ -34,7 +44,7 @@
 }
 
 /* Tablets y superiores */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .schedules__details {
     display: flex;
     flex-direction: row;
