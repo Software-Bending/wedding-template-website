@@ -1,34 +1,46 @@
+.floating {
+  position: absolute;
+}
+.in-line {
+  display: inline;
+  text-align: center;
+  width: 100%;
+}
+.columns {
+  display: flex;
+  justify-content: center;
+  height: 7em;
+  width: 100%;
+  top: 10%;
+}
+.no-margin {
+  margin: 0;
+}
 header {
   .bigger-text {
     font-size: 4em;
-    height: 80vh;
   }
   .banner-text {
     display: contents;
     position: relative;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+
     h2.getting-married {
-      position: absolute;
-      left: 50%; /* Position horizontally in the middle */
-      transform: translate(-50%, -50%);
       color: var(--color-contrast);
     }
+
     h1.groom {
-      position: absolute;
-      left: 10%;
       color: var(--color-contrast);
     }
     h1.and {
-      position: absolute;
-      top: 9%;
-      left: 50%;
-      font-size: 2rem;
+      font-size: 2em;
+      position: relative;
+      top: 40px;
       color: var(--color-contrast);
     }
     h1.bride {
-      position: absolute;
-      top: 6%;
-      right: 10%;
+      position: relative;
+      top: 30px;
       color: var(--color-contrast);
     }
   }
@@ -46,6 +58,10 @@ header {
 
 /* Tablets y superiores */
 @media (min-width: 1024px) {
+  .floating {
+    position: initial;
+  }
+
   header {
     display: flex;
   }
@@ -54,27 +70,20 @@ header {
   }
   .banner-text {
     flex: 1;
-    display: initial !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
     text-shadow: none !important;
-    .getting-married {
-      position: absolute;
-      top: 50px; /* position from top */
-      left: 50% !important; /* position from left */
+    h2.getting-married {
       color: var(--color-secondary) !important;
     }
     .groom {
-      top: 60px;
-      left: 20% !important;
       color: var(--color-secondary) !important;
     }
     .and {
-      top: 35% !important;
-      left: 50% !important;
       color: var(--color-secondary) !important;
     }
     .bride {
-      top: 30% !important;
-      right: 20% !important;
       color: var(--color-secondary) !important;
     }
   }
