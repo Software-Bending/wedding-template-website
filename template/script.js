@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   startCountdown('2025-02-30T08:00:00');
+  setToggleAudio();
 });
 
-function getElementById(id){
+function getElementById(id) {
   return document.getElementById(id);
 }
 
@@ -22,11 +23,19 @@ function startCountdown(eventDate) {
     let seconds = '00';
 
     if (diff >= 0) {
-        days = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
-        hours = Math.floor((diff / (1000 * 60 * 60)) % 24).toString().padStart(2, '0');
-        minutes = Math.floor((diff / (1000 * 60)) % 60).toString().padStart(2, '0');
-        seconds = Math.floor((diff / 1000) % 60).toString().padStart(2, '0');
-    } 
+      days = Math.floor(diff / (1000 * 60 * 60 * 24))
+        .toString()
+        .padStart(2, '0');
+      hours = Math.floor((diff / (1000 * 60 * 60)) % 24)
+        .toString()
+        .padStart(2, '0');
+      minutes = Math.floor((diff / (1000 * 60)) % 60)
+        .toString()
+        .padStart(2, '0');
+      seconds = Math.floor((diff / 1000) % 60)
+        .toString()
+        .padStart(2, '0');
+    }
 
     daysEl.textContent = days;
     hoursEl.textContent = hours;
@@ -36,4 +45,25 @@ function startCountdown(eventDate) {
 
   updateCountdown();
   setInterval(updateCountdown, 1000);
+}
+
+function setToggleAudio() {
+  const audioButton = document.getElementById('toggle-music');
+  const audio = document.getElementById('bg-music');
+  const imgContent = document.getElementById('toggle-music-content');
+
+  // Intenta reproducir automáticamente (algunos navegadores bloquean esto)
+  audio.play().catch(() => {
+    console.warn('La reproducción automática fue bloqueada.');
+  });
+
+  audioButton.addEventListener('click', function () {
+    if (audio.paused) {
+      audio.play();
+      imgContent.setAttribute('src', './../assets/img/pause.png');
+    } else {
+      audio.pause();
+      imgContent.setAttribute('src', './../assets/img/music-player.png');
+    }
+  });
 }
