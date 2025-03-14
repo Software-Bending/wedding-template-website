@@ -57,7 +57,7 @@ header {
   }
 }
 
-/* Tablets y superiores */
+/* Laptop y superiores */
 @media (min-width: 1024px) {
   .floating {
     position: initial;
@@ -79,13 +79,13 @@ header {
       color: var(--color-secondary) !important;
     }
     .groom {
-      color: var(--color-secondary) !important;
+      color: var(--color-accent) !important;
     }
     .and {
-      color: var(--color-secondary) !important;
+      color: var(--color-accent) !important;
     }
     .bride {
-      color: var(--color-secondary) !important;
+      color: var(--color-accent) !important;
     }
   }
   .banner-img {

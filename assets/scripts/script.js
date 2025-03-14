@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  startCountdown('2025-02-30T08:00:00');
+  startCountdown('2025-03-30T08:00:00');
   setToggleAudio();
 });
 
