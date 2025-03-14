@@ -1,16 +1,16 @@
 /*SECCION PARA INCRUSTAR LA FUENTE PRINICIPAL Y SECUNDARIA*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import '../assets/styles/countdown.css';
-@import '../assets/styles/nupcial.css';
-@import '../assets/styles/schedules.css';
-@import '../assets/styles/no-kids.css';
-@import '../assets/styles/gallery.css';
-@import '../assets/styles/confirmation.css';
-@import '../assets/styles/banner.css';
-@import '../assets/styles/dress-code.css';
-@import '../assets/styles/mesa-regalos.css';
-@import '../assets/styles/greetings.css';
-@import '../assets/styles/music.css';
+@import './countdown.css';
+@import './nupcial.css';
+@import './schedules.css';
+@import './no-kids.css';
+@import './gallery.css';
+@import './confirmation.css';
+@import './banner.css';
+@import './dress-code.css';
+@import './mesa-regalos.css';
+@import './greetings.css';
+@import './music.css';
 /*FIN DE SECCION*/
 
 :root {
