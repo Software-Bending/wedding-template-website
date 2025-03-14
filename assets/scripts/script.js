@@ -60,10 +60,10 @@ function setToggleAudio() {
   audioButton.addEventListener('click', function () {
     if (audio.paused) {
       audio.play();
-      imgContent.setAttribute('src', './../assets/img/pause.png');
+      imgContent.setAttribute('src', './assets/img/pause.png');
     } else {
       audio.pause();
-      imgContent.setAttribute('src', './../assets/img/music-player.png');
+      imgContent.setAttribute('src', './assets/img/music-player.png');
     }
   });
 }
