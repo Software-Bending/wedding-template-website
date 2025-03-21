@@ -26,11 +26,14 @@ header {
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
 
     h2.getting-married {
+      font-size: 2em;
       color: var(--color-contrast);
     }
 
     h1.groom {
       color: var(--color-contrast);
+      font-size: 4.5em;
+      margin-right: 10px;
     }
     h1.and {
       font-size: 2em;
@@ -39,6 +42,7 @@ header {
       color: var(--color-contrast);
     }
     h1.bride {
+      font-size: 4.5em;
       position: relative;
       top: 30px;
       color: var(--color-contrast);
@@ -97,6 +101,14 @@ header {
       height: auto;
       max-height: 450px;
       border-radius: 999em 40px 40px 999em;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner-img {
+    img {
+      margin-bottom: -4px;
     }
   }
 }

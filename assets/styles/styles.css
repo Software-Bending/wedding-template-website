@@ -173,3 +173,32 @@ button {
 .bold-500 {
   font-weight: 500;
 }
+
+section.section {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  section.section {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+
+/* Monitor Grande */
+@media (min-width: 1280px) {
+  section.section {
+    padding-left: 17%;
+    padding-right: 17%;
+  }
+}
+
+/* Pantalla extra grande */
+@media (min-width: 1536px) {
+  section.section {
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+}
