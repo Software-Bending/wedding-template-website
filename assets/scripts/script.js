@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  startCountdown('2025-03-30T08:00:00');
+  //Formato de la fecha año-mes-diaThora:minuto:segundo formato 24 horas
+  startCountdown('2025-03-30T08:00:00');//CAMBIAR FECHA Y HORA PARA ACTUALIZARLA EN EL COUNTDOWN
   setToggleAudio();
 });
 
